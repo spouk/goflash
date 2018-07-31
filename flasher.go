@@ -21,7 +21,7 @@ type FlashMessage struct {
 //---------------------------------------------------------------------------
 //  FLASH:
 //---------------------------------------------------------------------------
-func newFlash(salt string ) *Flash {
+func NewFlash(salt string ) *Flash {
 	n := &Flash{
 		Stock: make(map[string]*FlashMessage),
 		Salt: salt,
